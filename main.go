@@ -69,19 +69,6 @@ func main() {
 	variance := maths.Variance(data, float64(average))
 	stddev := maths.StdDev(variance)
 
-	// if math.IsInf(average, 0) {
-	// 	fmt.Println("Error: Number out of range")
-	// 	return
-	// } else if math.IsInf(median, 0) {
-	// 	fmt.Println("Error: Number out of range")
-	// 	return
-	// } else if math.IsInf(variance, 0) {
-	// 	fmt.Println("Error: Number out of range")
-	// 	return
-	// } else if math.IsInf(stddev, 0) {
-	// 	fmt.Println("Error: Number out of range")
-	// 	return
-	// }
 	fmt.Println("Average:",(math.Round(average)))
 	fmt.Println("Median:",(math.Round(median)))
 	fmt.Println("Variance:",(math.Round(variance)))
